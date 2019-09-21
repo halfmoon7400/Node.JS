@@ -18,3 +18,6 @@ after edit .bashrc
 
 source .bashrc
 
+ps -ef |grep node
+
+kill 0000 (<- job number)
