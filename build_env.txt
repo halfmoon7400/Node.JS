@@ -1,0 +1,20 @@
+sudo apt update
+sudo apt install build-essential openssl libssl-dev pkg-config
+
+wget https://nodejs.org/dist/v10.16.3/node-v10.16.3-linux-x64.tar.xz 
+
+tar -xf node-v10.16.3-linux-x64.tar.xz 
+
+sudo mv -f node-v10.16.3-linux-x64 /usr/local/bin/
+
+
+cd ~
+vi .bashrc
+
+export NODE_HOME=/usr/local/bin/node-v10.16.3-linux-x64
+export PATH=$PATH:$NODE_HOME/bin
+
+after edit .bashrc
+
+source .bashrc
+
